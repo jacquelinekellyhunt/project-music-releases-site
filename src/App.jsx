@@ -1,24 +1,17 @@
 import React from 'react';
-import data from './data.json';
-import Album from './components/Album';
-import Sidebar from './components/Sidebar';
-import Header from './components/Header'; 
-import './app.css';
+import Header from './components/Header';  // Default import for Header
+import { AlbumsCarousel } from './components/AlbumsCarousel';  // Import AlbumsCarousel
+import './components/styling/app.css';  // Import app styling
+import './components/styling/albumsCarousel.css';  // Import carousel styling
 
 const App = () => {
   return (
-    <div className="app-container">
-      <Header /> {/* Add the header */}
-      <div className="content">
-        <Sidebar playlists={data.playlists.items} />
-        <div className="album-list">
-          {data.albums.items.map((album, index) => (
-            <Album key={index} album={album} />
-          ))}
-        </div>
-      </div>
+    <div>
+      <Header />
+      {/* Adding AlbumsCarousel to be rendered after the Header */}
+      <AlbumsCarousel /> 
     </div>
   );
 };
 
-export default App;
+export default App;  // Ensure App is default export

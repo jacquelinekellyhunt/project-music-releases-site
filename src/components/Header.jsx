@@ -1,16 +1,13 @@
 import React from 'react';
-import './header.css';
-import logo from '../assets/logo.png'; 
+import './styling/header.css';  // Ensure that styling is imported
+import logo from '../assets/logo.png';  // Adjust the path if necessary
 
 const Header = () => {
   return (
     <header className="header">
-      <div className="logo-container">
-        <img src={logo} alt="GrooveNest Logo" className="logo" />
-        <h1 className="logo-text">GrooveNest</h1>
-      </div>
+      <img src={logo} alt="GrooveNest Logo" className="logo" />
     </header>
   );
 };
 
-export default Header;
+export default Header;  // Default export for Header
