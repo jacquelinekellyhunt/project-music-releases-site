@@ -1,0 +1,12 @@
+.album-list {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    padding: 20px;
+    gap: 10px;
+  }
+  
+  .album-list::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+  
