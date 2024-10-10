@@ -1,0 +1,34 @@
+* {
+    background-color: black;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column; /* Stacks Header on top */
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between; /* Keeps sidebar and album-list separated */
+    align-items: flex-start; /* Aligns items to the top */
+    padding: 20px;
+}
+
+.album-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* Aligns albums to the left */
+    gap: 20px;
+    width: 75%; /* Album list takes 75% of the width */
+}
+
+@media (max-width: 1024px) {
+    .main-content {
+        flex-direction: column; /* Stacks sidebar and albums vertically on smaller screens */
+    }
+
+    .album-list {
+        width: 100%;
+        justify-content: center; /* Center albums on smaller screens */
+    }
+}

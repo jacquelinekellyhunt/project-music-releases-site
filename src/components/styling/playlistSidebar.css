@@ -1,0 +1,92 @@
+/* General Sidebar Container */
+.sidebar-container {
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Playlist Header */
+.playlist-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.playlist-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.sidebar h3 {
+    font-size: 1.2rem;
+    color: white;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.arrow-icon {
+    width: 18px;
+    height: 12px;
+    transition: transform 0.3s ease;
+}
+
+.arrow-icon.closed {
+    transform: rotate(180deg);
+}
+
+.arrow-icon.open {
+    transform: rotate(0deg);
+}
+
+/* Playlist Items */
+.playlist-list {
+    margin-top: 10px;
+}
+
+.playlist-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    background: none;  /* No background color */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.playlist-item:hover {
+    background-color: #3A3A3A;  /* Darker background only on hover */
+}
+
+.playlist-item img {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.playlist-item span {
+    font-size: 0.9rem;
+    color: #FFFFFF;  /* Ensure white text */
+}
+
+.playlist-item span:hover {
+    background: none;  /* Ensure no background on text hover */
+    color: #FFFFFF;  /* Keep text white */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+    .sidebar-container {
+        width: 100%;
+    }
+}
