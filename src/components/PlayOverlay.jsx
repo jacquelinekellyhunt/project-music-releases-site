@@ -5,7 +5,7 @@ import heart from '../assets/icons/heart.svg';
 
 const PlayOverlay = () => {
   return (
-    <div className="album-hover">  {/* Match this with your CSS */}
+    <div className="album-hover">  
       <div className="heart-image child-overlay">
         <img src={heart} alt="Heart image" />
       </div>

@@ -38,6 +38,8 @@
 .heart-image,
 .dots-image {
   cursor: pointer;
+  background-color: transparent;
+  filter: invert(100%);
 }
 
 .play-image img {
@@ -82,18 +84,23 @@
   text-decoration: none;
 }
 
-.artist-name:hover {
-  text-decoration: underline;
+.artist-name a {
+  color: inherit;  
+  text-decoration: none; 
+}
+
+.artist-name a:hover {
+  text-decoration: underline;  
 }
 
 @media (max-width: 768px) {
   .album {
-      width: 30%;  /* 3 albums per row on tablet */
+    width: 30%;  /* 3 albums per row on tablet */
   }
 }
 
 @media (max-width: 480px) {
   .album {
-      width: 45%;  /* 2 albums per row on mobile */
+    width: 45%;  /* 2 albums per row on mobile */
   }
 }
