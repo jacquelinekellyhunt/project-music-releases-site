@@ -1,6 +1,6 @@
 import React from 'react';
-import './styling/header.css';  // Ensure that styling is imported
-import logo from '../assets/logo.png';  // Adjust the path if necessary
+import './styling/header.css';  
+import logo from '../assets/logo.png';  
 
 const Header = () => {
   return (
@@ -10,4 +10,4 @@ const Header = () => {
   );
 };
 
-export default Header;  // Default export for Header
+export default Header;  

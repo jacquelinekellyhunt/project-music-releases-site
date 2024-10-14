@@ -8,9 +8,9 @@ const Album = ({ album }) => {
     <div className="album">
       <div className="album-cover">
         <img src={album.images[0].url} alt={album.name} className="cover-image" />
-        <PlayOverlay />  {/* Render the PlayOverlay component */}
+        <PlayOverlay />  
       </div>
-      <a href={album.external_urls.spotify} target="_blank" rel="noopener noreferrer" className="album-name">
+      <a href={album.external_urls.spotify} target="_blank" className="album-name">
         {album.name}
       </a>
       <ArtistName artists={album.artists} />
