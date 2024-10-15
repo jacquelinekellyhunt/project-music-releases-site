@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './components/Header';  // Your existing header component
-import './components/styling/app.css';  // Import app styling
-import data from './data.json';  // Import Spotify data
-import Album from './components/Albums';  // Import Album component
-import PlaylistSidebar from './components/PlaylistSidebar';  // Correct path and name
+import Header from './components/Header';  
+import './components/styling/app.css';  
+import data from './data.json';  
+import Album from './components/Albums';  
+import PlaylistSidebar from './components/PlaylistSidebar';  
 
 const App = () => {
   return (

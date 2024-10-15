@@ -5,7 +5,7 @@ import playlistIcon from '../assets/icons/playlist.png';
 import arrowIcon from '../assets/icons/arrow.png';
 
 const SidebarLayout = () => {
-  const [isOpen, setIsOpen] = useState(true);  // Move state inside the function
+  const [isOpen, setIsOpen] = useState(true);  
 
   const togglePlaylist = () => setIsOpen(!isOpen);
 
